@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin:auto 35vw;
+}
+@media (max-width:1000px){
+  .container {margin:auto 30vw;}
+}
+@media (max-width:750px){
+  .container {margin:auto 20vw;}
+}
+@media (max-width:550px){
+  .container {margin:auto 10vw;}
+}
+@media (max-width:350px){
+  .container {margin:auto 3vw;}
+}
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.screen {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 25vh;
+  background-color: #14111198;
+  border: 1px solid #222;
+  margin: 1vh 0;
+}
+.buttons {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 0.7em;
+}
+.verticalize {
+  display: flex; 
+  flex-flow: column nowrap; 
+  width:16%
+}
+
+.verticalize_6to9 {
+  display: flex; 
+  flex-flow: column nowrap; 
+  width:22%;
+}
+
+span button {
+  height: 5vh;
+  border-radius: 4px;
+  border: 1px solid;
+  outline: 0;
+  font-size: 1.4em;
+}
+.row1 span button:nth-child(1){
+  background-color: #c83803;
+}
+.row6 span button:nth-child(1){
+  background-color: #c83803;
+}
+
+.row6 span button:nth-child(4), .row6 span button:nth-child(5){
+  background-color: #1d5ea7;
+}
+span button:active {background-color: #14111155}
